@@ -1,0 +1,13 @@
+//program to print table of given no.
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout<<"enter a no.:";
+    cin>>n;
+    for(int i=1;i<=10;i++)
+    {
+        cout<<n<<"*"<<i<<"="<<n*i<<endl;
+    }
+    return 0;
+}
