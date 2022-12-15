@@ -1,0 +1,18 @@
+//function call by address
+#include <iostream>
+using namespace std;
+void swap(int *a,int *b)
+{
+int temp;
+temp=*b;
+*b=*a;
+*a=temp;
+}
+int main() 
+{
+int a=5,b=10;
+swap(&a,&b);
+cout<<"swapped value of a is "<<a<<endl;
+cout<<"swapped value of b is "<<b<<endl;
+    return 0;
+}
