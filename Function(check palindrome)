@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+string pal(int a)
+{   int r,rev=0;
+    int num=a;
+    while(a!=0)
+    {
+       r=a%10;
+       a=a/10;
+       rev=rev*10+r;
+    }
+    if(rev==num)
+    return "palindrome";
+    else 
+    return "not";
+}
+int main()
+{
+    int n;
+    cout<<"enter a no. ";
+    cin>>n;
+    cout<<pal(n);
+    return 0;
+}
