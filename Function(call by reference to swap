@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+    void swap(int &a, int &b)
+{
+    int temp;
+    temp=b;
+    b=a;
+    a=temp;
+}
+   int main()
+   {
+       int x,y;
+       cin>>x>>y;
+       swap(x,y);
+      cout<<"value of x is "<<x<<" "<<"value of y is "<<y;
+    return 0;
+}
