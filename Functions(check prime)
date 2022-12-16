@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+string CheckPrime(int n)
+{   
+    int c=0 ;
+    for(int i=1;i<=n;i++)
+    {
+        if(n%i==0)
+        {
+            c++;
+        }
+    }
+    if(c==2)
+     return "prime";
+    else
+    return "not prime";
+}
+int main() 
+{
+    int n;
+    string result;
+    cout<<"enter a no. ";
+    cin>>n;
+    result=CheckPrime(n);
+    cout<<result;
+   return 0;
+}
