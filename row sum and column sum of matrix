@@ -1,0 +1,27 @@
+ #include <iostream>
+using namespace std;
+int main()
+{
+int n,m,sum0=0,sum1=0,sum2=0;
+cout<<"enter the size of matrix ";
+cin>>m>>n;
+cout<<"enter the elements of array ";
+int A[m][n];
+for(int i=0;i<m;i++)
+{
+    for(int j=0;j<n;j++)
+    {
+        cin>>A[i][j]; 
+        if(i==0)
+        sum0=sum0+A[i][j];
+        else if(i==1)
+        sum1=sum1+A[i][j];
+        else if(i==2)
+        sum2=sum2+A[i][j];
+    }
+}
+ cout<<"sum of row 1 is "<<sum0<<endl;
+    cout<<"sum of row 2 is "<<sum1<<endl;
+    cout<<"sum of row 3 is "<<sum2<<endl;
+      return 0;
+}
