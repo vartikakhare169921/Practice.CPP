@@ -20,6 +20,7 @@ switch(choice)
     case 4: c=a/b;
             break;
     default : cout<<"invalid choice";
+            exit(0);
 }
 cout<<"output is "<<c;
 return 0;
