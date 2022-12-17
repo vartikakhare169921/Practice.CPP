@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cout<<"enter 3 nos. ";
+    cin>>a>>b>>c;
+    a>b&&a>c?cout<<a:(b>c?cout<<b:cout<<c);
+return 0;
+}
