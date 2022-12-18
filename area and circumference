@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    float r;
+    cout<<"enter the radius";
+    cin>>r;
+    float area,cir;
+    area=3.14*r*r;
+    cir=2*3.14*r;
+    cout<<"area is "<<area<<endl;
+    cout<<"circumference is "<<cir;
+    return 0;
+}
