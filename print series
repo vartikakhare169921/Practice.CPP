@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main() {
+int a=3,next;
+int b=4;
+cout<<a<<endl;
+cout<<b<<endl;
+for(int i=1;i<=8;i++)
+{
+    next=a+b;
+    cout<<next<<endl;
+    a=b;
+    b=next;
+}
+    return 0;
+}
+Footer
+© 2022 GitHub, Inc.
