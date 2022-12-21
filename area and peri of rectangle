@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+   float l,b;
+   cout<<"enter the length ";
+   cin>>l;
+   cout<<"enter the breadth ";
+   cin>>b;
+   float area,peri;
+   area=l*b;
+  peri=2*(l+b);
+  cout<<"area is "<<area<<endl;
+  cout<<"perimetre is "<<peri;
+    return 0;
+}
