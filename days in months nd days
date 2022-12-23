@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+int days;
+cout<<"enter the no. of days ";
+cin>>days;
+int months = days/30;
+int day=days%30;
+cout<<months<<" months and "<<day<<" days";
+
+    return 0;
+}
