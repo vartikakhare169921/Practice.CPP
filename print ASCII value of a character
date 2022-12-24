@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main() {
+    char ch; 
+    cout<<"enter the character";
+    cin>>ch;
+    int d=ch;
+    cout<<d;
+
+    return 0;
+}
