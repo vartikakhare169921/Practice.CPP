@@ -1,0 +1,24 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() 
+{
+float a,b,c;
+float r1,r2,rp,ip,dis;
+cout<<"enter the coefficients: ";
+cin>>a>>b>>c;
+dis=b*b-4*a*c;
+if(dis>=0)
+{
+    r1=(-b+sqrt(dis))/(2*a);
+    r2=(-b-sqrt(dis))/(2*a);
+    cout<<r1<<" "<<r2;   
+}
+else if(dis<0)
+{
+    rp=-b/(2*a);
+    ip=sqrt(-dis)/(2*a);
+    cout<<rp<<"+"<<ip<<"i"<<"  "<<rp<<"-"<<ip<<"i";
+}
+    return 0;
+}
