@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main() {
+    char ch; 
+    cout<<"enter the character: ";
+    cin>>ch;
+    if(islower(ch))
+    {
+        char c=toupper(ch);
+        cout<<c;
+    }
+    else if(isupper(ch))
+    {    char d=tolower(ch);
+        cout<<d;
+    }
+
+    return 0;
+}
