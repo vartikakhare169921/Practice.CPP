@@ -1,0 +1,31 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int c=0,r;
+int fun(int n)
+{
+    while(n!=0)
+    {
+        r=n%10;
+        n=n/10;
+        c++;
+    }
+}
+int main() 
+{
+int n,digit=0;
+cin>>n;
+int num=n;
+fun(n);
+while(n!=0)
+{
+r=n%10;
+n=n/10;
+digit=digit+pow(r,c);
+}
+if(num==digit)
+cout<<"armstrong";
+else 
+cout<<"not";
+    return 0;
+}
