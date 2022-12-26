@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+void key(int A[],int n,int k)
+{
+for(int i=0;i<n;i++)
+{
+    if(k==A[i])
+    {
+    cout<<"key ofund at "<<i;
+    exit(0); 
+    }
+}
+cout<<"key not found ";
+}
+int main() {
+    int n,k;
+    cout<<"enter the size of array: ";
+    cin>>n;
+    cout<<"enter the elements of array ";
+    int A[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>A[i];
+    }
+    cout<<"enter the key ";
+    cin>>k;
+    key(A,n,k);
+    
+    return 0;
+}
