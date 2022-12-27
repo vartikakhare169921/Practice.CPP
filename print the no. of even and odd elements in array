@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cout<<"enter the size of array ";
+    cin>>n;
+    cout<<"enter the elements of array ";
+    int A[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>A[i];
+    }
+    int c1=0,c2=0;
+    for(int i=0;i<n;i++)
+    {
+        if(A[i]%2==0)
+        {
+         c1++;
+        }
+        else 
+        c2++;
+    }
+    cout<<"the no of even elements are "<<c1<<endl;
+    cout<<"the no. of odd elements are "<<c2; 
+    return 0;
+}
