@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    float c=0.0,d=0.0,e=0.0;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]>0)
+        c++;
+        else if(arr[i]<0)
+        d++;
+        else
+        e++;
+    }
+    float p=c/n;
+    float z=e/n;
+    float ne=d/n;
+    cout<<p<<endl<<ne<<endl<<z;
+    return 0;
+    
+}
