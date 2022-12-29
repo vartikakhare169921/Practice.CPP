@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n,r,rev=0;
+    cout<<"enter the number: ";
+    cin>>n;
+    for(int x=n;x>0||x<0;x=x/10)
+    {
+        r=x%10;
+        rev=rev*10+r;
+    }
+    cout<<"the reversed no. is "<<rev;
+
+    return 0;
+}
