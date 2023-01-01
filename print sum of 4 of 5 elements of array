@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int A[5],sum=0;
+     int max=sum;
+     int min=sum;
+        for(int j=0;j<5;j++)
+        {
+            cin>>A[j];
+        }
+        for(int i=0;i<5;i++)
+        {
+        for(int j=0;j<5;j++)
+        {    
+            
+            sum=sum+A[j];   
+        }
+        sum=sum-A[i];
+        cout<<"sum of everything except "<<A[i]<<" is "<<sum<<endl;
+        sum=0;
+        }
+       return 0;
+}
