@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+void sort(long A[],int size)
+{
+    for(int pass=1;pass<size;pass++)
+    {
+        for(int i=0;i<size-pass;i++)
+        {
+            if(A[i]>A[i+1])
+            {
+                long temp;
+                temp=A[i+1];
+                A[i+1]=A[i];
+                A[i]=temp;
+            }
+        }
+    }
+   
+}
+int main()
+{
+    long A[5],sum=0,min,max;
+    for(int i=0;i<5;i++)
+    {
+        cin>>A[i];
+    }
+     sort(A,5);
+     for(int i=0;i<5;i++)
+     {
+         sum=sum+A[i];
+     }
+     min=sum-A[4];
+     cout<<min<<" ";
+     sum=0;
+     for(int i=0;i<5;i++)
+     {
+         sum=sum+A[i];
+     }
+     max=sum-A[0];
+     cout<<max;
+         return 0;
+}
