@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int s,t,a,b,m,n,ap,c1=0,c2=0,ora;
+    cin>>s>>t;
+    cin>>a>>b;
+    cin>>m>>n;
+    int A[m];
+    int B[n];
+    for(int i=0;i<m;i++)
+    {
+        cin>>A[i];
+    }
+    for(int i=0;i<n;i++)
+    {
+        cin>>B[i];
+    }
+    for(int i=0;i<m;i++)
+    {
+       ap=A[i]+a;
+       if(ap>=s && ap<=t)
+       c1++;   
+       ap=0;
+    }
+    cout<<c1<<endl;
+    for(int i=0;i<n;i++)
+    {
+        ora=B[i]+b;
+        if(ora<=t && ora>=s)
+        c2++;   
+        ora=0;
+    }
+    cout<<c2<<endl;  
+    return 0;
+}
