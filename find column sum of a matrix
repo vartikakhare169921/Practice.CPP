@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n,m;
+    cin>>n>>m;
+    int A[n][m],sum=0;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<m;j++)
+        {
+        cin>>A[i][j];
+        }
+    }
+   for(int j=0;j<m;j++)
+    {
+      for(int i=0;i<n;i++)   
+        {
+            sum=sum+A[i][j];
+        }
+        cout<<"sum of column "<<j+1<<" is "<<sum<<endl;
+        sum=0;
+    }
+
+    return 0;
+}
