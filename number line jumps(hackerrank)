@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int x1,v1,x2,v2;
+    cin>>x1>>v1>>x2>>v2;
+    int o1=x1;
+    int  o2=x2;
+    for(int i=1;i<10000;i++)
+    {
+        x1=o1+i*v1;
+        x2=o2+i*v2;
+        if(x1==x2)
+        { 
+            cout<<"YES";
+            //cout<<i;
+            exit(0);
+        }
+    }
+    cout<<"NO";
+    return 0;
+}
