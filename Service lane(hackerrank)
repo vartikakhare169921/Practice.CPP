@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n,t,i,j;
+    cin>>n>>t;
+    int A[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>A[i];
+    }
+    while(t--)
+    {
+    cin>>i>>j;
+    int min=A[i];
+    for(int k=i;k<=j;k++)
+    {  
+        if(A[k]<min)
+        {
+            min=A[k];
+        }
+    }
+    cout<<min<<endl;
+    }
+    return 0;
+}
