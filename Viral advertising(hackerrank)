@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n,p=5,l=0,t=0;
+    cin>>n;
+   for(int d=1;d<=n;d++)
+   {
+     l=p/2;
+     p=l*3;
+     t=t+l;     
+   }
+   cout<<t;
+    return 0;
+}
