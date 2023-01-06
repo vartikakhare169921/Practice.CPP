@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   int l,r,x;
+   cin>>l;
+   cin>>r;
+   int max=0;
+   for(int b=l;b<=r;b++)
+   {
+    for(int a=l;a<=b;a++)
+    {
+         if((a^b)>max)
+         {
+             max=a^b;
+         }
+    }   
+   }
+   cout<<max;
+    return 0;
+}
