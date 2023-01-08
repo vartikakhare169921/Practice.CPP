@@ -1,0 +1,11 @@
+void plusMinus(vector<int> arr) {
+   int p=0,n=0,z=0;
+   for(int i=0;i<arr.size();i++)
+   {
+       if(arr[i]>0)
+       p++;
+       else if(arr[i]<0)
+       n++;
+       else
+       z++;
+   }
