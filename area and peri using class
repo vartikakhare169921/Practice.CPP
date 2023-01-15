@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+class rectangle
+{   public:
+    int length;
+    int breadth;
+    float area()
+    {
+        return length*breadth;
+    }
+    float peri()
+    {
+        return 2*(length+breadth);
+    }
+};
+int main() 
+{ 
+    rectangle r;
+    r.length=5;
+    r.breadth=5;
+    cout<<r.area();
+    return 0;
+}
