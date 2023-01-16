@@ -1,0 +1,91 @@
+#include <iostream>
+using namespace std;
+class rectangle
+{
+    int length;
+    int breadth;
+    public:
+    
+    int area()
+    {
+        return length*breadth;
+    }
+    
+    int perimetre()
+    {
+        return 2*(length+breadth);
+    }
+    
+    void setlength(int l)
+    {
+        if(l>=0)
+        length=l;
+        else 
+        length=1;
+    }
+    
+    void setbreadth(int b)
+    {
+        if(breadth>=0)
+        breadth=b;
+        else breadth=1;
+    }
+    
+    int getlength(int l)
+    {
+    return length=l;
+    }
+    
+    int getbreadth(int b)
+    {
+        return breadth=b;
+    }
+    
+    rectangle()
+    {
+        length=1;
+        breadth=1;
+    }
+    
+    rectangle(int l,int b)
+    {
+        length=l;
+        breadth=b;
+    }
+    
+    rectangle(rectangle &r)
+    {
+        length=r.length;
+        breadth=r.breadth;
+    }
+    
+    bool issquare()
+    {
+        return length==breadth;
+    }
+    
+    ~rectangle()
+    {
+        cout<<"rectangle destroyed";
+    }
+};
+
+int main()
+{
+    rectangle r;
+    rectangle r2(10,3);
+    rectangle r3(-6,5);
+    rectangle r1(r2);
+   r3.setlength(-6);
+    cout<<r2.area()<<endl;
+    cout<<r.area()<<endl;
+    cout<<r3.area()<<endl;
+    cout<<r1.area()<<endl;
+    if(r.issquare())
+    cout<<"YES"<<endl;
+   cout<<r.getlength(5)<<endl;
+    cout<<r2.getlength(5)<<endl;
+   
+    
+    return 0;
+}
