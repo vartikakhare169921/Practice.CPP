@@ -1,0 +1,31 @@
+string timeConversion(string s) 
+{   string t;
+    string h=s.substr(0,2);
+       int hr=stoi(h);
+   if(s[s.length()-2]=='A')
+   {
+       if(hr==12)
+       {
+           string k="00";
+           t=k.append(s.substr(2,6));
+       }
+       else
+       {
+           t=s.substr(0,8);
+       }
+   }
+     else if(s[s.length()-2]=='P')
+   {
+        if(hr==12)
+       {
+            t=s.substr(0,8);
+       }
+       else
+       {
+           int H=hr+12;
+       string k=to_string(H);
+       t=k.append(s.substr(2,6));
+       }
+   }
+   return t;
+  }
