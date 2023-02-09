@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+    class rat
+    { 
+      int p;
+      int q;
+      public:
+      rat(int a=1,int b=1)
+      {
+          p=a;
+          q=b;
+      }
+      void display()
+      {
+          cout<<p<<"/"<<q;
+      }
+     friend rat operator+(rat c1, rat c2);
+    };
+    rat operator+(rat c1, rat c2)
+      {
+          rat temp;
+          temp.p=c1.p*c2.q+c1.q*c2.p;
+          temp.q=c1.q*c2.q;
+          return temp;
+      }
+    int main()
+    {   int p1,q1,p2,q2;
+    cout<<"enter 1st rational no. ";
+    cin>>p1>>q1;
+    cout<<"enter 2nd rational no. ";
+    cin>>p2>>q2;
+        rat c1(p1,q1),c2(p2,q2),c3;
+        c3=c1+c2;
+        c3.display();
+        return 0;
+    }
